@@ -124,6 +124,12 @@ body {
   font-size: 22px;
 }
 
+
+del{
+  color: grey;
+  font-size: 15px;
+}
+
 .card button {
   outline: 0;
   padding: 12px;

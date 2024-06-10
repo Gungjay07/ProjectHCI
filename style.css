@@ -78,6 +78,8 @@ body {
 
 .menu-toggle {
   display: none;
+  color: #001aff;
+  margin-right: 10px;
 }
 
 .menu-items {
@@ -468,6 +470,11 @@ footer {
     width: 100%;
     margin-bottom: 40px;
     text-align: left;
+  }
+  .card{
+    max-width: none;
+    width: 90%;
+    margin: 10px;
   }
 }
 

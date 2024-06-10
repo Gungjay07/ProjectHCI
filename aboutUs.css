@@ -1,6 +1,18 @@
+/* Global Styles */
+:root {
+  --primary-color: #001aff;
+  --secondary-color: #cab9b9;
+  --text-color: #000;
+  --background-color: #f9f9f9;
+  --border-radius: 10px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  text-align: center;
+  height: 100%;
+  /* color: #fff; */
 }
 
 .container {
@@ -68,6 +80,8 @@ body {
 
 .menu-toggle {
   display: none;
+  color: #001aff;
+  margin-right: 10px;
 }
 
 .menu-items {
@@ -88,6 +102,63 @@ body {
 .nav .menu-items .register {
   display: none;
 }
+
+.btn {
+  padding: 7px 25px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  color: #000;
+  /* color: #fff; */
+  text-decoration: none;
+  margin-right: 15px;
+  transition: all 0.5s ease;
+}
+
+.btn-text:hover {
+  background-color: #001aff;
+  color: white;
+}
+
+.cateringz-judul{
+    /* border: solid 1px; */
+    max-width: 100%;
+    margin: 20px 50px;
+}
+
+.cateringz-judul h2{
+    font-size: medium;
+    font-weight: 400;
+}
+.cateringz-judul h1{
+    font: bold x-large sans-serif;
+}
+.about-cateringz {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #b8b8b8; */
+  padding: 0 11%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.image-cateringz img {
+  width: 450px;
+  padding: 0 20px;
+}
+
+.text-about h1 {
+  font-size: 36px;
+  position: relative;
+}
+
+.text-about span{
+    font-weight: bold;
+}
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
   .menu-items {
@@ -125,154 +196,10 @@ body {
   }
 }
 
-.hero {
-  text-align: center;
-  padding: 135px 0;
-}
-.hero .headline {
-  font-weight: 36px;
-}
-
-.hero .headline .sub {
-  font-weight: 18px;
-  line-height: 32px;
-}
-
-.primary {
-  display: inline-block;
-  background-color: #001aff;
-  color: white;
-  border-radius: 100px;
-  padding: 12px 17px;
-  text-decoration: none;
-  box-shadow: 0px 15px 30px rgba(0, 26, 255, 0.2);
-}
-
-.secondary {
-  background-color: aliceblue;
-  color: rgb(6, 6, 6);
-  border-radius: 100px;
-  padding: 12px 17px;
-  text-decoration: none;
-}
-
-.button-ctas {
-  margin-top: 35px;
-}
-.top-menu {
-  font-weight: 600;
-  font-size: inherit;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  border-radius: 10px;
-  column-gap: 20px;
-}
-
-.price {
-  color: grey;
-  font-size: 22px;
-}
-
-.card button {
-  outline: 0;
-  padding: 12px;
-  border: 2px solid blue;
-  background-color: #fff;
-  color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 50%;
-  font-size: 18px;
-  border-radius: 10px;
-}
-
-.card button:hover {
-  opacity: 0.7;
-  background-color: blue;
-  color: #fff;
-}
 
 
 
-.profile img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 20px;
-}
-
-.content {
-  flex-grow: 1;
-}
-
-.rating {
-  font-size: 24px;
-  color: #ffd700;
-}
-
-.star {
-  cursor: pointer;
-}
-
-/* testimoni */
-
-.testimonials{
-  padding: 40px 0;
-  background: #ffffff;
-  color: #434343;
-  text-align: center;
-}
-.inner{
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 20px;
-}
-.border{
-  width: 160px;
-  height: 6px;
-  background: #6ab04c;
-  margin: 26px auto;
-}
-.row{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.col{
-  flex: 33.33%;
-  max-width: 30%;
-  box-sizing: border-box;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  margin: 8px;
-}
-.testimoni{
-  background: #ffffff;
-  padding: 30px;
-}
-.testimoni img{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.name{
-  font-size: 20px;
-  text-transform: uppercase;
-  margin: 10px 0;
-}
-.star{
-  color: #ffd700;
-  margin-bottom: 10px;
-}
-/* footer */
+/* * footer */ */
 footer {
   bottom: 0;
 }
@@ -394,6 +321,13 @@ footer {
   color: rgb(22, 255, 177);
 }
 
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 90%;
+    max-width: none;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .nav .brand,
   .nav .menu,
@@ -411,6 +345,19 @@ footer {
   .nav .menu-item {
     text-align: center;
   }
+  .hero .headline {
+    font-size: 28px;
+  }
+  .hero .headline .sub {
+    font-size: 16px;
+  }
+  .button-ctas {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero {
+    padding: 0px;
+  }
   footer {
     position: static;
   }
@@ -422,17 +369,13 @@ footer {
     margin-bottom: 40px;
     text-align: left;
   }
-  .col{
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 1140px) {
-  .container {
-    width: 90%;
+  .card{
     max-width: none;
+    width: 90%;
+    margin: 10px;
   }
 }
+
 @media screen and (max-width: 500px) {
   .top {
     flex-direction: column;
